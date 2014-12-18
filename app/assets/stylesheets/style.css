@@ -96,7 +96,7 @@ a {
 .jumbotron {
   height: 400px;
   width: 100%;
-  background-image: url("/assets/homepage-1400x400.jpg");
+  background-image: url("/assets/homepage-1400x400.png");
   background-size: cover;
   margin-bottom: 0;
 }
