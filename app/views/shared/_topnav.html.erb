@@ -1,0 +1,47 @@
+<!--=== Top ===-->
+<div class="logo">
+  <pre>
+_    ____ ___     ____    ____ ____ _  _ _  _ ____ ____ ____ ____    ____ ____ _  _ ____ _  _ _  _ _ ____ ____ _  _ ___ ____  ____ ____ _  _ 
+|    |__| |__]    |___ __ |    |  | |\/| |\/| |___ |__/ |    |___    |__/ |___ |\ | |__| |\ | |  | | |    |___ |\ |  |  |___  |    |  | |\/| 
+|___ |  | |__]    |___    |___ |__| |  | |  | |___ |  \ |___ |___    |  \ |___ | \| |  | | \|  \/  | |___ |___ | \|  |  |___ .|___ |__| |  | 
+                                                                                                                                             
+  </pre>
+</div>
+<!--<div class="logo">
+  <img src="http://www.thecloudhack.com/media-site/img/logo_the_cloud_hack.png" height="50" width="80">
+</div>-->
+<div class="browse" style="background-color:black;border:1px dotted #00cc66;">
+  <div class="container">
+    <ul class="header-nav">
+      <li><%= link_to 'Home Page', controller: "pages", action: "home" %></li>
+      <li>
+        <div class="dropdown">
+          <button id="dLabel" type="button" class="btn btn-success" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+            Categories
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <% if !@categories.nil? %>
+              <% @categories.each do |categories| %>
+                <li><%= link_to categories.name, categories %></li>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </li>
+      <div class="pull-right">
+        <% if user_signed_in? %>
+          Logged in as <strong>
+          <%= current_user.email %>
+          </strong>.
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete, :class => "btn btn-success" %>
+        <% else %>
+          <li><%= link_to "Sign up", new_user_registration_path, :class => "btn btn-success" %></li>
+          <li><%= link_to "Sign in", new_user_session_path, :class => "btn btn-success" %></li>
+        <% end %>
+      </div>
+    </ul>
+  </div>
+</div>
+
+<ul></ul>

@@ -1,0 +1,62 @@
+<html><head>
+  <title>Myapp</title>
+  <link data-turbolinks-track="true" href="/assets/bootstrap.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/bootstrap.min.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/categories.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/landing-page.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/pages.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/products.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/style.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/users.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet">
+  <script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script><style type="text/css"></style>
+<script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/bootstrap.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/communication.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="SVGeEohM0DUYqMFZn/YaUHr4BrHrOxlf+N3VAY6OlSs=" name="csrf-token">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="screen" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen" rel="stylesheet">
+  <script type="text/javascript" src="communication.js"></script>
+  <link href="/assets/style.css?body=1" media="screen" rel="stylesheet">
+</head>
+<body>
+
+<!--=== End Top ===-->
+  <!--=== Top ===-->
+<div class="browse">
+  <div class="container">
+    <ul>
+      <li>Art</li>
+      <li>Home &amp; Living</li>
+      <li>Jewelry</li>
+      <li>Books &amp; Music</li>
+      <li>Women</li>
+      <li>Men</li>
+      <li>Kids</li>
+      <li>Vintage</li>
+      <li>Weddings</li>
+      <li>Crafts</li>
+    </ul>
+  </div>
+</div>
+
+<div class="top">
+    <div class="container">
+    <div class="logo">
+      <img src="https://www.etsy.com/assets/dist/images/etsylogo.20140703190113.png">
+    </div>
+    <div>
+        <ul class="header-nav">
+            <li class="account">
+              <div class="cart pull-right">
+                <div class="fa fa-shopping-cart fa-2x">
+                </div>
+              </div>
+          </li>
+        </ul>
+    </div>
+</div>
+
