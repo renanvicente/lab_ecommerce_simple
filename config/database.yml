@@ -10,8 +10,14 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: db/development.sqlite3
+  adapter: mysql
+  encoding: utf8
+  database: ecommerce_db
+  username: ecommerce
+  password: 123456
+  host: 172.16.0.51
+  port: 3306
+  pool: 10
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
