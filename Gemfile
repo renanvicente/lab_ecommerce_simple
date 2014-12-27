@@ -47,4 +47,5 @@ gem 'rspec-html-matchers', '0.6.1'
 
 gem 'devise', '3.4.0'
 # add mysql dependency
-gem 'mysql'
+gem 'mysql2'
+gem 'makara', github: 'taskrabbit/makara'
