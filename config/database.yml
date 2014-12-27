@@ -10,14 +10,23 @@ default: &default
   timeout: 5000
 
 development:
-  adapter: mysql
+  adapter: 'mysql2_makara'
   encoding: utf8
   database: ecommerce_db
   username: ecommerce
   password: 123456
-  host: 172.16.0.51
-  port: 3306
-  pool: 10
+  secure_auth: false
+  makara:
+    blacklist_duration: 5
+    master_ttl: 5
+    sticky: true
+    connections:
+      - role: master
+        host: 172.16.0.51
+        port: 3306
+      - role: slave
+        host: 172.16.0.52
+        port: 3306
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
